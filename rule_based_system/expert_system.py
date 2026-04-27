@@ -7,7 +7,7 @@ import pandas as pd
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
 from sklearn.model_selection import train_test_split
 
-from rule_based_system.rules import assess_patient
+from rules import assess_patient
 from utils.data_processing import FEATURE_COLS, TARGET_COL, handle_missing_values, load_dataset
 
 DEFAULT_RAW_DATA_PATH = Path("data/raw_data.csv")

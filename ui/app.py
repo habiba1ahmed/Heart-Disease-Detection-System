@@ -751,6 +751,7 @@ elif page == "Machine Learning Model":
 
     if not payload:
         st.warning("ML metrics not found. Run training first to populate this page.")
+        ml_m = {}
     else:
         ml_m = payload.get("metrics", {})
         c1, c2, c3, c4 = st.columns(4)
